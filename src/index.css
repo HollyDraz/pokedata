@@ -3,10 +3,33 @@ body {
   background-image: url('https://wallpapers.com/images/hd/pokeball-2560-x-1440-background-vqdyaksc7n3shdnc.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1
+  {
+  color: #fffdfd;
+
+}
+
+pre {
+  color: #000000;
+  background-color: rgba(193, 183, 183, 0.323);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+li {
+  color: #000000;
+  background-color: rgba(247, 114, 114, 0.5);
+  padding: 5px;
+  border-radius: 3px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+
 }
 
