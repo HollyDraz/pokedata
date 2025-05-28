@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './App.css';
+
 
 function App() {
   const [output, setOutput] = useState('');
@@ -6,7 +8,7 @@ function App() {
 
   // GET - Real Pokémon data
   const getPokemon = async () => {
-    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=5');
+    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=10');
     const data = await res.json();
     setPokemonList(data.results);
     setOutput(JSON.stringify(data.results, null, 2));
@@ -14,7 +16,7 @@ function App() {
 
   // POST - Mock add
   const addPokemon = async () => {
-    const data = { name: 'Bulbasaur', type: 'Grass/Poison' };
+    const data = { name: 'Rowlet', type: 'Grass' };
 
     const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
       method: 'POST',
